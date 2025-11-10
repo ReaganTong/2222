@@ -1,16 +1,10 @@
-﻿namespace Lab_2
+﻿namespace Lab_2.Views
 {
     public partial class MainPage : ContentPage
     {
         public MainPage()
         {
             InitializeComponent();
-        }
-
-        private void OnFavoriteClicked(object sender, EventArgs e)
-        {
-            
-            DisplayAlert("Favorite", "You have added this pet to your favorites!", "OK");
         }
     }
 }
