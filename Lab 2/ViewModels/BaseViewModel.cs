@@ -1,10 +1,11 @@
-﻿using Prism.Mvvm;
+﻿using System.ComponentModel; // Change this from Prism.Mvvm
 
 namespace Lab_2.ViewModels
 {
-    public abstract class BaseViewModel : BindableBase
+    // Just implement the interface. 
+    // Fody will automatically add the PropertyChanged event.
+    public abstract class BaseViewModel : INotifyPropertyChanged
     {
-        // By inheriting BindableBase, Fody will automatically
-        // handle the INotifyPropertyChanged implementation
+        public event PropertyChangedEventHandler PropertyChanged;
     }
 }
