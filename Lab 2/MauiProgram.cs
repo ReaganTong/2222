@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using Lab_2.Views;         // Add this
 using Lab_2.ViewModels;    // Add this
+using Prism;
 using Prism.DryIoc;        // Add this
 
 namespace Lab_2
